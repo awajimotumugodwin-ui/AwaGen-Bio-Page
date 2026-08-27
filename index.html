@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Godwin Awajimotumu - Computer Science Undergraduate & Aspiring Full-Stack/Web Developer Portfolio">
+    <title>Godwin Awajimotumu | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="my-cv" href="assets/my-cv.pdf">
+</head>
+<body>
+    <div class="portfolio-container">
+
+        <!-- HEADER / NAVIGATION -->
+        <header class="site-header">
+            <a href="#home" class="logo" aria-label="Godwin Awajimotumu Home">
+                <span class="logo-mark"></span>
+                <span class="logo-text">
+                    <span class="name-first">Godwin</span>
+                    <span class="name-last">Awajimotumu</span>
+                </span>
+            </a>
+
+            <!-- Mobile Navigation Toggle (Pure CSS) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle navigation menu">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Right: Social Quick Icons + GitHub CTA -->
+            <div class="header-right">
+                <div class="header-socials">
+                    <a href="https://tiktok.com/@godwin.awajimotumu" target="_blank" rel="noopener noreferrer" class="icon-circle" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-5.2-1.74 2.89 2.89 0 0 1 2.31-2.83V7.64a6.34 6.34 0 0 0-5.06 6.18A6.34 6.34 0 0 0 10.76 20a6.34 6.34 0 0 0 6.34-6.34V9a8.27 8.27 0 0 0 4.75 1.48V7a4.84 4.84 0 0 1-2.26-.31z"/>
+                        </svg>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="icon-circle" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/godwin.awajimotumu" target="_blank" rel="noopener noreferrer" class="icon-circle" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/@Awajimotumu" target="_blank" rel="noopener noreferrer" class="icon-circle" aria-label="X (Twitter)">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="icon-circle" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://slack.com" target="_blank" rel="noopener noreferrer" class="icon-circle" aria-label="Slack">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                            <path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:godwinawajimotumu@gmail.com" class="icon-circle" aria-label="Email">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                            <path d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.183l10 8.104 10-8.104V19H2z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <a href="https://github.com/awajimotumugodwin-ui" target="_blank" rel="noopener noreferrer" class="btn-github">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <!-- 1. HERO SECTION -->
+            <section class="hero" id="home">
+                <div class="hero-content">
+                    <span class="hero-greeting">I'm</span>
+                    <h1 class="hero-title">
+                        <span class="hero-name">Godwin</span>
+                        <span class="hero-name">Awajimotumu</span>
+                    </h1>
+                    <div class="hero-divider"></div>
+                    <p class="hero-text">
+                        A Computer Science undergraduate with a strong passion for Web Development, Programming, Science and Technology. I build modern, responsive web applications and digital experiences.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Hire Me</span>
+                            <span class="btn-arrow">&rarr;</span>
+                        </a>
+                        <a href="my-cv.pdf" download class="btn btn-secondary">
+                            <span>Download CV</span>
+                            <span class="btn-arrow">&darr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Portrait Image Frame -->
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-backdrop"></div>
+                    <div class="hero-image-frame">
+                        <img src="assets/bio-image.png" alt="Godwin Awajimotumu" class="hero-portrait">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. SOCIALS BAR -->
+            <section class="social-bar" id="socials">
+                <div class="social-strip">
+                    <a href="https://tiktok.com/@godwin.awajimotumu" target="_blank" rel="noopener noreferrer" class="social-item">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-5.2-1.74 2.89 2.89 0 0 1 2.31-2.83V7.64a6.34 6.34 0 0 0-5.06 6.18A6.34 6.34 0 0 0 10.76 20a6.34 6.34 0 0 0 6.34-6.34V9a8.27 8.27 0 0 0 4.75 1.48V7a4.84 4.84 0 0 1-2.26-.31z"/>
+                            </svg>
+                        </span>
+                        <div class="social-info">
+                            <span class="social-platform">TikTok</span>
+                            <span class="social-handle">@AwaGen</span>
+                        </div>
+                    </a>
+
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-item">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </span>
+                        <div class="social-info">
+                            <span class="social-platform">Facebook</span>
+                            <span class="social-handle">Godwin Awajimotumu</span>
+                        </div>
+                    </a>
+
+                    <a href="https://instagram.com/godwin.awajimotumu" target="_blank" rel="noopener noreferrer" class="social-item">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </span>
+                        <div class="social-info">
+                            <span class="social-platform">Instagram</span>
+                            <span class="social-handle">@godwin.awajimotumu</span>
+                        </div>
+                    </a>
+
+                    <a href="https://x.com/Godwin_Awaju" target="_blank" rel="noopener noreferrer" class="social-item">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </span>
+                        <div class="social-info">
+                            <span class="social-platform">X (Twitter)</span>
+                            <span class="social-handle">@Godwin_Awaju</span>
+                        </div>
+                    </a>
+
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-item">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </span>
+                        <div class="social-info">
+                            <span class="social-platform">LinkedIn</span>
+                            <span class="social-handle">Godwin Awajimotumu</span>
+                        </div>
+                    </a>
+
+                    <a href="https://slack.com" target="_blank" rel="noopener noreferrer" class="social-item">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/>
+                            </svg>
+                        </span>
+                        <div class="social-info">
+                            <span class="social-platform">Slack</span>
+                            <span class="social-handle">godwin-awajimotumu</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:godwin@example.com" class="social-item">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.183l10 8.104 10-8.104V19H2z"/>
+                            </svg>
+                        </span>
+                        <div class="social-info">
+                            <span class="social-platform">Email</span>
+                            <span class="social-handle">godwin@example.com</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 3. ABOUT SECTION -->
+            <section class="section-container" id="about">
+                <div class="section-header-block">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">
+                        Computer Scientist, front-end developer, tech enthusiast.
+                    </p>
+                </div>
+                <div class="about-content-grid">
+                    <div class="about-card">
+                        <p class="about-paragraph">
+                            Godwin Awajimotumu is a Computer Science undergraduate with a strong passion for web development, programming, science, and technology. He is developing practical skills in HTML, CSS, JavaScript, C++, and digital content creation, with an interest in building modern, responsive, accessible, and user-friendly digital experiences.
+                        </p>
+                        <p class="about-paragraph">
+                            Driven by curiosity and a commitment to continuous learning, Godwin loves turning ideas into real-world software applications and engaging digital media.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights-grid">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">&#9881;</span>
+                            <div class="highlight-text">
+                                <h3>Web Development</h3>
+                                <p>Building clean, responsive, and intuitive web interfaces.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">&#128187;</span>
+                            <div class="highlight-text">
+                                <h3>C++ & Algorithms</h3>
+                                <p>Writing structured code to solve complex computational problems.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">&#127916;</span>
+                            <div class="highlight-text">
+                                <h3>Digital Content</h3>
+                                <p>Editing videos and visual media with storytelling precision.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. ACADEMIC INFO / EDUCATION SECTION -->
+            <section class="section-container" id="education">
+                <div class="section-header-block">
+                    <h2 class="section-title">Academic Background</h2>
+                    <p class="section-subtitle">
+                        My educational progression spanning primary, secondary, and university studies.
+                    </p>
+                </div>
+
+                <div class="education-grid">
+                    <!-- Academic Level 1: University -->
+                    <article class="education-card highlight-border">
+                        <div class="education-badge">University</div>
+                        <div class="education-header">
+                            <span class="education-degree">B.Sc. Computer Science(In View)</span>
+                            <span class="education-period">2024 &ndash; Present</span>
+                        </div>
+                        <h3 class="education-school">Rivers State University</h3>
+                        <p class="education-description">
+                            Currently pursuing a degree in Computer Science with a focus on software engineering, algorithm analysis, object-oriented programming, data structures, and web technologies.
+                        </p>
+                        <div class="education-tags">
+                            <span class="tag">Computer Science</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Software Dev</span>
+                        </div>
+                    </article>
+
+                    <!-- Academic Level 2: Secondary School -->
+                    <article class="education-card">
+                        <div class="education-badge">Secondary</div>
+                        <div class="education-header">
+                            <span class="education-degree">Senior Secondary School Certificate (SSCE/WAEC)</span>
+                            <span class="education-period">2016 &ndash; 2022</span>
+                        </div>
+                        <h3 class="education-school">Government Secondary School, Ngo, Andoni.</h3>
+                        <p class="education-description">
+                            Completed secondary education with strong foundation in Science, Mathematics, English, and Information & Communication Technology (ICT).
+                        </p>
+                        <div class="education-tags">
+                            <span class="tag">Science & Math</span>
+                            <span class="tag">ICT Basics</span>
+                            <span class="tag">SSCE Diploma</span>
+                        </div>
+                    </article>
+
+                    <!-- Academic Level 3: Primary School -->
+                    <article class="education-card">
+                        <div class="education-badge">Primary</div>
+                        <div class="education-header">
+                            <span class="education-degree">First School Leaving Certificate (FSLC)</span>
+                            <span class="education-period">2010 &ndash; 2016</span>
+                        </div>
+                        <h3 class="education-school">Community Primary School, Oyorokoto.</h3>
+                        <p class="education-description">
+                            Completed primary education, laying the foundational skills in literacy, quantitative reasoning, science, and early computing concepts.
+                        </p>
+                        <div class="education-tags">
+                            <span class="tag">Primary Education</span>
+                            <span class="tag">FSLC Certificate</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 5. SKILLS SECTION -->
+            <section class="section-container" id="skills">
+                <div class="section-header-block">
+                    <h2 class="section-title">Technical & Creative Skills</h2>
+                    <p class="section-subtitle">
+                        Core competencies across programming languages, web standards, poetry, and media creation tools.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Skill Group 1 -->
+                    <div class="skill-category-card">
+                        <h3 class="category-title">Front-End Development</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML5 & Semantic Markup</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>CSS3 & Responsive Design</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript (ES6+)</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Group 2 -->
+                    <div class="skill-category-card">
+                        <h3 class="category-title">Programming & Tools</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C++ Programming</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Video Editing & Motion</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git & VS Code</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. SERVICES SECTION -->
+            <section class="services" id="services">
+                <div class="services-header">
+                    <div class="services-intro">
+                        <h2 class="section-title">What I Can Do For Your Needs</h2>
+                        <p class="section-subtitle">
+                            I build fast, reliable and user-friendly digital solutions that help businesses and individuals grow in the digital world.
+                        </p>
+
+                        <!-- Key Statistics Grid -->
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Years of Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Satisfaction Rate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 Service Cards -->
+                    <div class="service-cards-grid">
+                        <article class="service-card">
+                            <div class="card-image-container">
+                                <img src="assets/frontend-development.svg" alt="Front-End Web Development Illustration" class="card-image">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">FRONT-END WEB DEVELOPMENT</h3>
+                                <p class="card-description">
+                                    I create responsive and modern websites using HTML, CSS, JavaScript and modern frameworks.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="service-card">
+                            <div class="card-image-container">
+                                <img src="assets/cpp-programming.svg" alt="C++ Programming Illustration" class="card-image">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">C++ PROGRAMMING</h3>
+                                <p class="card-description">
+                                    I write efficient and scalable C++ programs for problem solving, algorithms and software development.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="service-card">
+                            <div class="card-image-container">
+                                <img src="assets/javascript-development.svg" alt="JavaScript Development Illustration" class="card-image">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">JAVASCRIPT DEVELOPMENT</h3>
+                                <p class="card-description">
+                                    I build interactive and dynamic web applications using JavaScript and modern libraries.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="service-card">
+                            <div class="card-image-container">
+                                <img src="assets/video-editing.svg" alt="Video Editing Illustration" class="card-image">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">VIDEO EDITING</h3>
+                                <p class="card-description">
+                                    I edit high-quality videos for YouTube, TikTok, social media and promotions with creative effects.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. PROJECTS SECTION -->
+            <section class="section-container" id="projects">
+                <div class="section-header-block">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">
+                        A selection of web applications and programming projects I have built.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-preview">
+                            <div class="project-badge">Web Design</div>
+                            <h3 class="project-title">Responsive Portfolio Website</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-text">
+                                A high-performance responsive personal website built strictly with semantic HTML5, CSS3, and JavaScript, featuring dark theme aesthetics and fluid typography.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Responsive</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-preview">
+                            <div class="project-badge">C++ Software</div>
+                            <h3 class="project-title">Algorithm & Data Structures Suite</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-text">
+                                A collection of modular C++ algorithms focusing on dynamic data structures, search optimization, data manipulation/analysis, and sorting problem-solving routines.
+                            </p>
+                            <div class="project-tech">
+                                <span>C++</span>
+                                <span>OOP</span>
+                                <span>Algorithms</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-preview">
+                            <div class="project-badge">Media Content</div>
+                            <h3 class="project-title">Digital Video & Tech Showcase</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-text">
+                                Professionally edited video content for tech tutorials and social media platforms with custom motion graphics and sound design.
+                            </p>
+                            <div class="project-tech">
+                                <span>Video Editing</span>
+                                <span>Motion Design</span>
+                                <span>Media</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 8. CONTACT SECTION -->
+            <section class="section-container" id="contact">
+                <div class="section-header-block">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">
+                        Have a question, project idea, or collaboration proposal? Send a message below.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Details Panel -->
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">Let's Connect</h3>
+                        <p class="contact-info-text">
+                            I am open to web development opportunities, coding projects, media production, and technical collaborations.
+                        </p>
+                        
+                        <div class="contact-detail-item">
+                            <span class="contact-icon">&#9993;</span>
+                            <div>
+                                <span class="detail-label">Email</span>
+                                <span class="detail-val">godwinawajimotumu@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <span class="contact-icon">&#128205;</span>
+                            <div>
+                                <span class="detail-label">Location</span>
+                                <span class="detail-val">Nigeria</span>
+                            </div>
+                        </div>
+
+                        <div class="status-badge">
+                            <span class="status-dot"></span>
+                            <span>Available for new projects & opportunities</span>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form" action="/Submit" method="POST" onsubmit="return true;">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <span class="btn-arrow">&rarr;</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- 9. FOOTER -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <a href="#home" class="logo">
+                    <span class="logo-mark"></span>
+                    <span class="logo-text">
+                        <span class="name-first">Godwin</span>
+                        <span class="name-last">Awajimotumu</span>
+                    </span>
+                </a>
+
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <a href="#home" class="back-to-top">
+                    <span>Back to Top</span>
+                    <span class="btn-arrow">&uarr;</span>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Godwin Awajimotumu. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
