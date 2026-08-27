@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cpp-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cpp-hex" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="50%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <filter id="cpp-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#2563eb" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background panel -->
+  <rect width="240" height="180" rx="12" fill="url(#cpp-bg)"/>
+
+  <!-- Glowing Hexagon Shield -->
+  <g filter="url(#cpp-glow)" transform="translate(120, 90)">
+    <!-- Outer Ring / Hexagon -->
+    <polygon points="0,-65 56,-32 56,32 0,65 -56,32 -56,-32" fill="url(#cpp-hex)" stroke="#60a5fa" stroke-width="3"/>
+    <polygon points="0,-57 49,-28 49,28 0,57 -49,28 -49,-28" fill="none" stroke="#93c5fd" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- C++ Typography -->
+    <text x="-6" y="14" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="44" fill="#ffffff" text-anchor="middle" letter-spacing="-1">C</text>
+    <text x="30" y="0" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="24" fill="#f5c32c" text-anchor="middle">+</text>
+    <text x="30" y="20" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="24" fill="#f5c32c" text-anchor="middle">+</text>
+  </g>
+</svg>
